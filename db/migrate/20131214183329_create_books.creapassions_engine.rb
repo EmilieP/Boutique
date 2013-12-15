@@ -1,0 +1,12 @@
+# This migration comes from creapassions_engine (originally 20131214133321)
+class CreateBooks < ActiveRecord::Migration
+  def change
+    create_table :books do |t|
+      t.string  :title
+      t.text    :description
+      t.string  :image
+
+      t.timestamps
+    end
+  end
+end
