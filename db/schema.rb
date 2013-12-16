@@ -11,10 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131214183329) do
+ActiveRecord::Schema.define(version: 20131215170052) do
 
   create_table "books", force: true do |t|
     t.string   "title"
+    t.string   "subtitle"
+    t.integer  "page_count"
+    t.integer  "color_page_count"
+    t.integer  "bw_page_count"
+    t.string   "isbn"
+    t.string   "ean"
+    t.string   "price_ttc"
+    t.datetime "publication_expected_at"
+    t.datetime "publication_effective_at"
+    t.text     "c4_extended"
+    t.text     "c4_reduced"
+    t.text     "c4_argu"
+    t.boolean  "visible"
+    t.integer  "appearance_percentage"
+    t.boolean  "appearance_random"
+    t.boolean  "showroom"
     t.text     "description"
     t.string   "image"
     t.datetime "created_at"
