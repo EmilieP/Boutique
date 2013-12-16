@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131215170052) do
+ActiveRecord::Schema.define(version: 20131216114622) do
 
   create_table "books", force: true do |t|
     t.string   "title"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20131215170052) do
     t.boolean  "appearance_random"
     t.boolean  "showroom"
     t.text     "description"
-    t.string   "image"
+    t.string   "image_url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
